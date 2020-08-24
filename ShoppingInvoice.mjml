@@ -1,0 +1,142 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Great Vibes" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"></mj-font>
+    <mj-font name="Inconsolata" href="https://fonts.googleapis.com/css2?family=family=Inconsolata:wght@300&display=swap"></mj-font>
+    <mj-style>
+      .product-img {
+          max-width: 40px;
+      }
+      .order-summary td, .order-summary th {
+          height: 40px;
+          vertical-align: middle;
+      		text-align: center;
+  				border-bottom: 1px solid #ddd;
+      }
+      .order-summary td.item-image,
+      .order-summary th.item-image {
+      		width: 40px;
+      }
+      .order-summary th {
+          background-color: #E3B1A0;
+      }
+      @media only screen and (max-width: 600px) {
+        .order-summary td.item-image,
+      	.order-summary th.item-image {
+            display: none;
+      			width: 0;
+        }
+        .order-summary td.item-name {
+            text-align: center;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <!-- top section -->
+    <mj-section background-color="#E3B1A0" full-width="full-width">
+  <mj-column width="33.33333333333333%" vertical-align="middle">
+    <!--image-->
+        <mj-image src="https://image.freepik.com/free-vector/bakery-cake-logo-concept_23-2148460449.jpg" border-radius="60%" align="center" alt="cake logo"></mj-image>
+      </mj-column>
+      <mj-column width="66.66666666666666%" vertical-align="middle">
+        <!--Text-->
+        <mj-text align="center" padding-bottom="0px" padding-top="40px" color="#444" font-weight="bold" font-size="40px" font-family="Great Vibes">
+          The Cherry Cake Traditional Bakery
+          </mj-text>
+        <mj-spacer></mj-spacer>
+         <mj-text align="right" padding-bottom="0px" color="#444" font-size="20px">
+          
+           <strong>Order number:</strong> <a href="/link/to.myAccount">123456</a> <br/>
+          
+           <strong>Purchase Date:</strong> 25/8/2020
+          </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- end of header section-->
+    
+    <!-- middle section -->
+    <mj-section>
+    <mj-column>
+      <mj-text font-size="15px" font-family="Inconsolata">
+      <h1>Order confirmation</h1>
+        <p>Dear Jane, <br />
+          Thank you for your purchase and for shopping small!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin risus diam, aliquam non erat a, dictum maximus tellus. Proin nec leo quis leo pulvinar tincidunt nec eget risus. Sed molestie id metus vel faucibus. Vivamus mollis elit pellentesque tempus maximus. Quisque suscipit vulputate luctus. Suspendisse gravida ante id odio suscipit sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus placerat justo et turpis ullamcorper, sed ultrices magna consectetur. Maecenas quis mauris ac mauris commodo tristique. Aliquam erat volutpat. Sed ac tellus eget diam pretium ultricies. Vivamus sit amet finibus eros. Donec a est ligula. Fusce mi nulla, congue vitae libero at, gravida pulvinar sem. Nullam aliquam ac purus eu eleifend.</p>
+      </mj-text>
+      <mj-text align="left" font-size="20px" padding-top="50px">
+        <u>Your Order Summary:</u>
+      </mj-text>
+      <mj-spacer></mj-spacer>
+      <!-- Shopping order summary -->
+      <mj-table css-class="order-summary">
+          <tr>
+            <th class="item-image"></th>
+            <th class="item-name">Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td class="item-image"><img src="https://as1.ftcdn.net/jpg/00/89/13/40/500_F_89134078_39JzswUvxvnbQYWrMa3087qnj16JDYP7.jpg" class="product-img"/></td>
+            <td class="item-name">Chocolate Chip Cookie</td>
+            <td>5</td>
+            <td>£8.00</td>
+          </tr>
+          <tr>
+            <td class="item-image"><img src="https://as2.ftcdn.net/jpg/01/06/32/17/500_F_106321727_qhJDN0WliPLcL2EGI5HG66ghQ1iWLcM2.jpg" class="product-img"/></td>
+            <td class="item-name">Blueberry Muffin</td>
+            <td>3</td>
+            <td>£6.50</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <!-- end of item list -->
+    <mj-section>
+      <mj-column>
+        <!-- Contact Details -->
+        <mj-text>
+          <u><h2>Shipping Address:</h2></u>
+      <p> Mrs Jane Smith</p>
+          <p>122 Chestnut Avenue</p>
+          <p>Derbyshire</p>
+        <p>SK17 8JJ</p>
+          <p>01298 872665</p>
+          <p><strong>Shipping Method:</strong> Express: 1-2 days</p>
+        </mj-text>
+        </mj-column>
+      
+      <!-- billing address -->
+        
+          <mj-column>
+           <mj-text>
+             <h2><u>Billing Address:</u></h2>
+             <p> Mrs Jane Smith</p>
+             <p>122 Chestnut Avenue</p>
+             <p>Derbyshire</p>
+             <p>Sk17 8JJ</p>
+             <p><strong>Payment Method:</strong> Visa</p>
+            </mj-text>
+         </mj-column>
+         </mj-section>
+    
+    <!-- Footer website details -->
+    <mj-section background-color="#E3B1A0" full-width="full-width">
+ 		 <mj-column vertical-align="middle">
+       <mj-text><img src="https://img.icons8.com/fluent-systems-filled/24/000000/domain.png"/><br></br>Website:
+       <p>cherrycakebakery.co.uk</p>
+       </mj-text>
+      </mj-column> 
+      <mj-column vertical-align="middle">
+        <mj-text><img src="https://img.icons8.com/material-sharp/24/000000/new-post.png"/><br></br>Email:
+        <p>www.cherrycakebakery@gmail.com</p>
+          </mj-text>
+      </mj-column> 
+      <mj-column vertical-align="middle">
+        <mj-text> <img src="https://img.icons8.com/fluent-systems-filled/24/000000/phone.png"/><br></br>Phone:
+        <p>01298 896678</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+  </mj-body>
+</mjml>
