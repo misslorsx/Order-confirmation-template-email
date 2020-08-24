@@ -1,4 +1,4 @@
-# MJML Templates
+# Order confirmation email 
 
 ## Rendering templates
 You can either generate an output file once, or let mjml watch the source file and re-render if there are any changes.
